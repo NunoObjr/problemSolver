@@ -1,0 +1,78 @@
+.neonButtonDIV{
+   padding: 15px 25px;
+   color: #838383;
+   position: relative;
+   display: inline-block;
+   text-transform: uppercase;
+   overflow: hidden;
+   font-size: 16px;
+   transition: 0.2s;
+   letter-spacing: 1px;
+   text-decoration: none;
+   border-radius: 20px;
+}
+
+.neonButtonDIV:hover{
+    color: black;
+    background: #db2626;
+    box-shadow: 0 0 10px #db2626, 0 0 20px #db2626, 0 0 60px #db2626;
+    transition-delay: 0.4s;
+    cursor: pointer;
+}
+
+.neonButtonDIV span{
+    position: absolute;
+    display: block;
+}
+.neonButtonDIV span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #db2626);
+}
+
+.neonButtonDIV:hover span:nth-child(1){
+    transition: 0.7s;
+    left: 100%;
+    transition-delay: 0.15s;
+}
+.neonButtonDIV span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #db2626);
+}
+
+.neonButtonDIV:hover span:nth-child(2){
+    transition: 0.7s;
+    top: 100%;
+    transition-delay: 0.15s;
+}
+.neonButtonDIV span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #db2626);
+}
+
+.neonButtonDIV:hover span:nth-child(3){
+    transition: 0.7s;
+    right: 100%;
+    transition-delay: 0.15s;
+}
+.neonButtonDIV span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #db2626);
+}
+
+.neonButtonDIV:hover span:nth-child(4){
+    transition: 0.7s;
+    bottom: 100%;
+    transition-delay: 0.15s;
+}
